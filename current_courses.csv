@@ -1,10 +1,11 @@
 course_number	title	timetable_group	points
-02282	Algorithms for Massive Data Sets	F1A	7.5
+02504	Computer Vision	F3B	5
 02808	Personal Data Interaction for Mobile and Wearables	F5	10
 01410	Cryptology 1	F2A	5
 42575	Technology and Innovation Management	E3B	5
 02805	Social graphs and interactions	E5	10
 02239	Data Security	E5B	7.5
+02614	High-Performance Computing	January	5
 02582	Computational Data Analysis	F2B	5
 02806	Social data analysis and visualization	F3A	5
 02460	Advanced Machine Learning	F1B	5
@@ -12,3 +13,7 @@ course_number	title	timetable_group	points
 02807	Computational Tools for Data Science	E7	5
 42436	Technology Entrepreneurship	E1B	5
 02830	Advanced Project in Digital Media Engineering	E5B	10
+00000	Master's Thesis	ZZZ	30
+
+02456	Deep learning	E2A	5.0
+02450	Introduction to Machine Learning and Data Mining	F4A, E4A	5.0
