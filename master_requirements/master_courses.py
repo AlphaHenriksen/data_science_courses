@@ -1,4 +1,5 @@
 import pandas as pd
+import matplotlib.pyplot as plt
 
 timetable_to_time = {'January': "January",
                      'June': "June",
@@ -58,6 +59,11 @@ def ects_requirements(current_courses, general_1, general_2, techno):
             print(f"The requirements for {name} have been satisfied")
     print()
     
+    print(f"The total number of ECTS points in the plan is {sum(current_courses.points) - 10}\n")  # Subtract 10 from total since these points are from the bachelor
+
+    plt.bar(list(range(len(totals)-1)), [totals[0] + totals[1], totals[2], totals[3]], color = ["red", "purple", "orange"])
+    plt.axhline(30, color = "k", linestyle = "--")
+    plt.show()
 
 
 def alternative_courses(current, core, courselist):
