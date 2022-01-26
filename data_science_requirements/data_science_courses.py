@@ -60,8 +60,6 @@ def alternative_courses(current, core, courselist):
     # Remove all courses that are already being taken to show alternatives
     core_commons = pd.merge(current_courses, core["title"].reset_index(), how ='inner').set_index('index')
     courselist_commons = pd.merge(current_courses, courselist["title"].reset_index(), how ='inner').set_index('index')
-    print(sorted(core_commons.index.values.tolist()))
-    print(sorted(courselist_commons.index.values.tolist()))
     core_alts = core.drop(core_commons.index.values.tolist())
     courselist_alts = courselist.drop(courselist_commons.index.values.tolist())
 
@@ -77,8 +75,10 @@ def alternative_courses(current, core, courselist):
 if __name__ == '__main__':
     
     current_courses = pd.read_csv("data_science_courses/current_courses.csv", sep='\t', dtype={0:str, 1:str, 2:str, 3:float})
-    core = pd.read_csv("data_science_courses/core.csv", sep='\t', dtype={0:str, 1:str, 2:float, 3:str})
-    courselist = pd.read_csv("data_science_courses/courselist.csv", sep='\t', dtype={0:str, 1:str, 2:float, 3:str})
+    core = pd.read_csv("data_science_courses/data_science_requirements/core.csv", sep='\t', dtype={0:str, 1:str, 2:float, 3:str})
+    courselist = pd.read_csv("data_science_courses/data_science_requirements/courselist.csv", sep='\t', dtype={0:str, 1:str, 2:float, 3:str})
+
+    
     # print(current_courses)
     # ects_above_required(current_courses, core, courselist)
     alternative_courses(current_courses, core, courselist)
