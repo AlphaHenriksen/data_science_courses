@@ -14,3 +14,6 @@ Especially [this](https://www.compute.dtu.dk/english/education/Data-Science-Big-
 * A master's in one of Computer Science and Engineering, Mathematical Modelling and Computation or Digital Media Engineering (Human-Centered Artificial Intelligence) is best for achieving the data scientist goals
 * 45 ECTS from the general courselist and 15 from the core list must have been followed
 * The master's thesis should revolve around data analysis and two of the four subjects Data origins and collection, Data storage, Analytics and Consumers. The thesis should be written in a real world setting with a company (external partner)
+&nbsp
+&nbsp
+To run the code, change the courses in *current_courses.csv* to fit those listed in your studyplanner. Until a feature is implemented to read the courses automatically from the studyplanner, the best course of action is to copy and past the courses into the csv file and make sure that each column has **tab-seperated** values.
