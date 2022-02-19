@@ -86,10 +86,10 @@ def alternative_courses(current, core, courselist):
 
 if __name__ == '__main__':
     
-    current_courses = pd.read_csv("data_science_courses/current_courses.csv", sep='\t', dtype={0:str, 1:str, 2:str, 3:float})
-    general_1 = pd.read_csv("data_science_courses\master_requirements\general_competence_1.csv", sep='\t', dtype={0:str, 1:str, 2:float, 3:str})
-    general_2 = pd.read_csv("data_science_courses\master_requirements\general_competence_2.csv", sep='\t', dtype={0:str, 1:str, 2:float, 3:str})
-    techno = pd.read_csv("data_science_courses/master_requirements/technological_specialization.csv", sep='\t', dtype={0:str, 1:str, 2:float, 3:str})
+    current_courses = pd.read_csv("current_courses.csv", sep='\t', dtype={0:str, 1:str, 2:str, 3:float})
+    general_1 = pd.read_csv("master_requirements\general_competence_1.csv", sep='\t', dtype={0:str, 1:str, 2:float, 3:str})
+    general_2 = pd.read_csv("master_requirements\general_competence_2.csv", sep='\t', dtype={0:str, 1:str, 2:float, 3:str})
+    techno = pd.read_csv("master_requirements/technological_specialization.csv", sep='\t', dtype={0:str, 1:str, 2:float, 3:str})
 
     # print(general_1)
     # ects_above_required(current_courses, core, courselist)

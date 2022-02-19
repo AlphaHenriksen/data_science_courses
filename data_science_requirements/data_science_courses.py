@@ -74,11 +74,11 @@ def alternative_courses(current, core, courselist):
 
 if __name__ == '__main__':
     
-    current_courses = pd.read_csv("data_science_courses/current_courses.csv", sep='\t', dtype={0:str, 1:str, 2:str, 3:float})
-    core = pd.read_csv("data_science_courses/data_science_requirements/core.csv", sep='\t', dtype={0:str, 1:str, 2:float, 3:str})
-    courselist = pd.read_csv("data_science_courses/data_science_requirements/courselist.csv", sep='\t', dtype={0:str, 1:str, 2:float, 3:str})
+    current_courses = pd.read_csv("current_courses.csv", sep='\t', dtype={0:str, 1:str, 2:str, 3:float})
+    core = pd.read_csv("data_science_requirements/core.csv", sep='\t', dtype={0:str, 1:str, 2:float, 3:str})
+    courselist = pd.read_csv("data_science_requirements/courselist.csv", sep='\t', dtype={0:str, 1:str, 2:float, 3:str})
 
     
     # print(current_courses)
-    # ects_above_required(current_courses, core, courselist)
-    alternative_courses(current_courses, core, courselist)
+    ects_above_required(current_courses, core, courselist)
+    # alternative_courses(current_courses, core, courselist)
