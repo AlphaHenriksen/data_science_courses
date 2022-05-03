@@ -4,29 +4,29 @@ timetable_to_time = {'January': "January",
                      'June': "June",
                      'July': "July",
                      'August': "August",
-                     'E1A': "Mon 8-12",
-                     'E2A': "Mon 13-17",
-                     'E3A': "Tue 8-12",
-                     'E4A': "Tue 13-17",
-                     'E7': "Tue 18-22",
-                     'E5A': "Wed 8-12",
-                     'E5B': "Wed 13-17",
-                     'E5': "Wed 8-17",
-                     'E2B': "Thu 8-12",
-                     'E1B': "Thu 13-17",
-                     'E4B': "Fri 8-12",
-                     'E3B': "Fri 13-17",
-                     'F1A': "Mon 8-12",
-                     'F2A': "Mon 13-17",
-                     'F3A': "Tue 8-12",
-                     'F4A': "Tue 13-17",
-                     'F7': "Tue 18-22",
-                     'F5A': "Wed 8-12",
-                     'F5B': "Wed 13-17",
-                     'F2B': "Thu 8-12",
-                     'F1B': "Thu 13-17",
-                     'F4B': "Fri 8-12",
-                     'F3B': "Fri 13-17"}
+                     'E1A': "Fall Mon 8-12",
+                     'E2A': "Fall Mon 13-17",
+                     'E3A': "Fall Tue 8-12",
+                     'E4A': "Fall Tue 13-17",
+                     'E7': "Fall Tue 18-22",
+                     'E5A': "Fall Wed 8-12",
+                     'E5B': "Fall Wed 13-17",
+                     'E5': "Fall Wed 8-17",
+                     'E2B': "Fall Thu 8-12",
+                     'E1B': "Fall Thu 13-17",
+                     'E4B': "Fall Fri 8-12",
+                     'E3B': "Fall Fri 13-17",
+                     'F1A': "Spring Mon 8-12",
+                     'F2A': "Spring Mon 13-17",
+                     'F3A': "Spring Tue 8-12",
+                     'F4A': "Spring Tue 13-17",
+                     'F7': "Spring Tue 18-22",
+                     'F5A': "Spring Wed 8-12",
+                     'F5B': "Spring Wed 13-17",
+                     'F2B': "Spring Thu 8-12",
+                     'F1B': "Spring Thu 13-17",
+                     'F4B': "Spring Fri 8-12",
+                     'F3B': "Spring Fri 13-17"}
 
 
 def ects_above_required(courses, core, courselist):
@@ -53,7 +53,7 @@ def ects_above_required(courses, core, courselist):
     print(f"Courselist points over requirement: {sum2 - total2}\n")
 
 
-def alternative_courses(current, core, courselist):
+def alternative_courses(current, core, courselist, num_points=None, time_period=None):
     """Find all courses that have not been taken from the core and courselist from the data science requirements"""
 
     # Remove all courses that are already being taken to show alternatives
@@ -65,6 +65,10 @@ def alternative_courses(current, core, courselist):
     # Make timetable readable for easy user access
     core_alts['timetable_group'].replace(timetable_to_time, inplace=True)
     courselist_alts['timetable_group'].replace(timetable_to_time, inplace=True)
+    # Find courses from courselist with specific number of ects points or in a specific period
+    # courselist_alts = courselist_alts[courselist_alts["points"] == 5.0]
+    # is_fall = ["Fall" in time for time in courselist_alts["timetable_group"]]
+    # courselist_alts = courselist_alts[is_fall]
 
     print("Alternative course from core:", core_alts, sep='\n', end='\n\n')
     print("Alternative course from courselist:", courselist_alts, sep='\n', end='\n\n')
@@ -78,4 +82,4 @@ if __name__ == '__main__':
 
     # print(current_courses)
     ects_above_required(current_courses, core, courselist)
-    # alternative_courses(current_courses, core, courselist)
+    alternative_courses(current_courses, core, courselist)
