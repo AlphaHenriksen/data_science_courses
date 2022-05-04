@@ -36,7 +36,7 @@ def ects_requirements(current_courses, general_1, general_2, techno):
     general_1_commons = pd.merge(current_courses, general_1["title"], how='inner')
     general_2_commons = pd.merge(current_courses, general_2["title"], how='inner')
     techno_commons = pd.merge(current_courses, techno["title"], how='inner')
-    names = ["entrepreneurship", "general competance", "technological specialization", "thesis"]
+    names = ["entrepreneurship", "general competence", "technological specialization", "thesis"]
 
     print(f"Total courses taken from {names[0]}: ")
     print(general_1_commons, "\n")
