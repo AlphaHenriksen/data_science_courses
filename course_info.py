@@ -3,7 +3,7 @@ import pandas as pd
 
 def _in_title(course_title: str, df):
     """Check if the course title is in the given dataframe"""
-    return course_title in list(df["title"])
+    return course_title.lower() in [title.lower() for title in df["title"]]
 
 
 def _in_number(course_number: str, df):

@@ -1,0 +1,2 @@
+current_courses_jan23 is missing an innovation course and only works if I am allowed to count introduction to machine learning and data mining and deep learning.
+current_courses_jan23_new will only work if i am able to count introduction to machine learning and data mining and deep learning.

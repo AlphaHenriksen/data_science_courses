@@ -8,7 +8,7 @@ from dataloader import get_data
 
 if __name__ == "__main__":
     current_courses, core, courselist, general_1, general_2, techno = get_data(
-        "current_courses_jan23.csv"
+        "current_courses_jan23_new.csv"
     )
 
     # How are the courses seperated into general, technological, elective, master
@@ -21,13 +21,13 @@ if __name__ == "__main__":
     # alternative_courses(current_courses, core, courselist)
 
     # Show where one course is included
-    course_importance(
-        current_courses,
-        core,
-        courselist,
-        general_1,
-        general_2,
-        techno,
-        course_number=None,
-        course_title="Advanced Image Analysis",
-    )
+    # course_importance(
+    #     current_courses,
+    #     core,
+    #     courselist,
+    #     general_1,
+    #     general_2,
+    #     techno,
+    #     course_number=None,
+    #     course_title="ux design prototyping",
+    # )
