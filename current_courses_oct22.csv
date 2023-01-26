@@ -1,0 +1,25 @@
+course_number	title	timetable_group	points
+01410	Cryptology 1	E2A	5
+02504	Computer vision	10	5
+02443	Stochastic simulation	E2A	5
+02808	Personal data interaction	E2A	10
+02634	Programming and data processing	E2A	2.5
+
+02807	Computational Tools for Data Science	E7	5
+02562	Rendering - Introduction	E5B	5
+38102	Technology Entrepreneurship	E1B	5
+02614	High-Performance Computing	January	5
+
+02806	Social data analysis and visualization	F3A	5
+02506	Advanced Image Analysis	F5B	5
+02170	Database Systems	F2B	5
+02417	Time Series Analysis	F4B	5
+
+02809	UX Design Prototyping	E1A	5
+02805	Social graphs and interactions	E5	10
+02476	Machine Learning Operations	January	5
+
+00000	Master's Thesis	ZZZ	32.5
+
+02456	Deep learning	E2A	5.0
+02450	Introduction to Machine Learning and Data Mining	F4A, E4A	5.0

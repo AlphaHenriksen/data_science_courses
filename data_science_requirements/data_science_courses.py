@@ -34,8 +34,8 @@ def ects_above_required(courses, core, courselist):
     https://www.compute.dtu.dk/english/education/Data-Science-Big-Data/Core
     https://www.compute.dtu.dk/english/education/Data-Science-Big-Data/Courselist"""
 
-    core_commons = pd.merge(current_courses, core["title"], how='inner')
-    courselist_commons = pd.merge(current_courses, courselist["title"], how='inner')
+    core_commons = pd.merge(courses, core["title"], how='inner')
+    courselist_commons = pd.merge(courses, courselist["title"], how='inner')
 
     print("Total courses taken from core: ")
     print(core_commons, "\n")
@@ -57,8 +57,8 @@ def alternative_courses(current, core, courselist, num_points=None, time_period=
     """Find all courses that have not been taken from the core and courselist from the data science requirements"""
 
     # Remove all courses that are already being taken to show alternatives
-    core_commons = pd.merge(current_courses, core["title"].reset_index(), how='inner').set_index('index')
-    courselist_commons = pd.merge(current_courses, courselist["title"].reset_index(), how='inner').set_index('index')
+    core_commons = pd.merge(current, core["title"].reset_index(), how='inner').set_index('index')
+    courselist_commons = pd.merge(current, courselist["title"].reset_index(), how='inner').set_index('index')
     core_alts = core.drop(core_commons.index.values.tolist())
     courselist_alts = courselist.drop(courselist_commons.index.values.tolist())
 
@@ -67,8 +67,10 @@ def alternative_courses(current, core, courselist, num_points=None, time_period=
     courselist_alts['timetable_group'].replace(timetable_to_time, inplace=True)
     # Find courses from courselist with specific number of ects points or in a specific period
     # courselist_alts = courselist_alts[courselist_alts["points"] == 5.0]
-    # is_fall = ["Fall" in time for time in courselist_alts["timetable_group"]]
-    # courselist_alts = courselist_alts[is_fall]
+    is_fall = ["Fall" in time for time in courselist_alts["timetable_group"]]
+    courselist_alts = courselist_alts[is_fall]
+    five_points = [time == 7.5 for time in courselist_alts["points"]]
+    courselist_alts = courselist_alts[five_points]
 
     print("Alternative course from core:", core_alts, sep='\n', end='\n\n')
     print("Alternative course from courselist:", courselist_alts, sep='\n', end='\n\n')
@@ -76,7 +78,7 @@ def alternative_courses(current, core, courselist, num_points=None, time_period=
 
 if __name__ == '__main__':
 
-    current_courses = pd.read_csv("current_courses.csv", sep='\t', dtype={0: str, 1: str, 2: str, 3: float})
+    current_courses = pd.read_csv("current_courses_oct22.csv", sep='\t', dtype={0: str, 1: str, 2: str, 3: float})
     core = pd.read_csv("data_science_requirements/core.csv", sep='\t', dtype={0: str, 1: str, 2: float, 3: str})
     courselist = pd.read_csv("data_science_requirements/courselist.csv", sep='\t', dtype={0: str, 1: str, 2: float, 3: str})
 

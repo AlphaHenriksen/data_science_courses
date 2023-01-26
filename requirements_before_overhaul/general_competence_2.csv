@@ -1,8 +1,10 @@
 course_number	title	points	timetable_group
 02282	Algorithms for Massive Data Sets	7.5	Spring F1A (Mon 8-12)
+02450	Introduction to Machine Learning and Data Mining	5	Spring F4A (Tues 13-17), Autumn E4A (Tues 13-17)
 02504	Computer Vision	5	Spring F3B (Fri 13-17)
 02561	Computer Graphics	5	Autumn E5A (Wed 8-12)
 02582	Computational Data Analysis	5	Spring F2B (Thurs 8-12)
 02805	Social graphs and interactions	10	Autumn E5 (Wed 8-17)
 02806	Social data analysis and visualization	5	Spring F3A (Tues 8-12)
 02807	Computational Tools for Data Science	5	E7 (Tues 18-22)
+02809	UX Design Prototyping	5	Autumn E1A (Mon 8-12)

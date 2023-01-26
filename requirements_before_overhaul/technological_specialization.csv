@@ -1,34 +1,19 @@
 course_number	title	points	timetable_group
-02180	Introduction to Artificial Intelligence	5	Spring F3A (Tues 8-12)
 02238	Biometric Systems	5	June
 02266	User Experience Engineering	5	January
-02282	Algorithms for Massive Data Sets	7.5	Spring F1A (Mon 8-12)
 02285	Artificial Intelligence and Multi-Agent Systems	7.5	Spring F4A (Tues 13-17)
 02289	Algorithmic Techniques for Modern Data Models	5	Autumn E1A (Mon 8-12)
-02409	Multivariate Statistics	5	Autumn E1A (Mon 8-12)
-02417	Time Series Analysis	5	Spring F4B (Fri 8-12)
-02443	Stochastic Simulation	5	June
 02455	Experiment in Cognitive Science	5	Autumn E5A (Wed 8-12)
 02456	Deep learning	5	Autumn E2A (Mon 13-17)
 02458	Cognitive Modelling	5	Autumn E2B (Thurs 8-12)
 02460	Advanced Machine Learning	5	Spring F1B (Thurs 13-17)
 02471	Machine learning for signal processing	5	Autumn E1B (Thurs 13-17)
-02476	Machine Learning Operations	5	January
 02477	Bayesian machine learning	5	Spring F2A (Mon 13-17)
-02504	Computer Vision	5	Spring F3B (Fri 13-17)
 02506	Advanced Image Analysis	5	Spring F5B (Wed 13-17)
 02507	Project work within Image Analysis and Computer Graphics	5	January
-02514	Deep Learning in Computer Vision	5	June
-02561	Computer Graphics	5	Autumn E5A (Wed 8-12)
 02562	Rendering - Introduction	5	Autumn E5B (Wed 13-17)
-02563	Generative Methods for Computer Graphics	5	Spring F1B (Thurs 13-17)
-02566	Creating Digital Visual Experiences	10	Spring F2 (Mon 13-17, Thurs 8-12)
 02580	Geometric Data Analysis and Processing	5	Spring F5B (Wed 13-17)
-02582	Computational Data Analysis	5	Spring F2B (Thurs 8-12)
 02614	High-Performance Computing	5	January
-02805	Social graphs and interactions	10	Autumn E5 (Wed 8-17)
-02806	Social data analysis and visualization	5	Spring F3A (Tues 8-12)
-02807	Computational Tools for Data Science	5	E7 (Tues 18-22)
 02808	Personal Data Interaction for Mobile and Wearables	10	Spring F5 (Wed 8-17)
 02830	Advanced Project in Digital Media Engineering	10	Autumn E5B (Wed 13-17)
 02840	Computer Game Programming Fundamentals (DADIU)	15	Autumn

@@ -1,33 +1,33 @@
 course_number	title	points	timetable_group
 01227	Graph Theory	5	F1B
-01405	Algebraic Error-Correcting Codes	5	F4B
-01617	Introduction to Dynamical Systems	5	E3B
-02170	Database Systems	5	F2B
-02229	Systems Optimization	7.5	E3A
-02232	Applied Cryptography	5	E1B
-02239	Data Security	7.5	E5B
-02244	Logic for Security	7.5	F2A
-02249	Computationally Hard Problems	7.5	E3A
-02258	Parallel Computer Systems	5	E5A
-02266	User Experience Engineering	5	January
-02269	Process Mining	5	E5A
-02282	Algorithms for Massive Data Sets	7.5	F1A
-02291	System Integration	5	F5A
-02407	Stochastic Processes - Probability 2	5	E3A
-02409	Multivariate Statistics	5	E1A
-02417	Time Series Analysis	5	E4B, F4B
-02443	Stochastic Simulation	5	June
-02450	Introduction to Machine Learning and Data Mining	5	F4A, E4A
-02456	Deep learning	5	E2A
-02460	Advanced Machine Learning	5	F1B
-02506	Advanced Image Analysis	5	F5B
-02582	Computational Data Analysis	5	F2B
-02586	Statistical Genetics	5	E1A
-02614	High-Performance Computing	5	January
-02805	Social graphs and interactions	10	E5
-02806	Social data analysis and visualization	5	F3A
-02807	Computational Tools for Data Science	5	E7
-25303	Mathematical biology	5	E1B
-30530	Geographic Information Systems	5	F4A
-42112	Mathematical Programming Modelling	5	January
-42578	Advanced Business Analytics	5	F3B
+01405	Algebraic Error-Correcting Codes	5	F4B 
+01617	Introduction to Dynamical Systems	5	E3B 
+02170	Database Systems	5	F2B 
+02229	Systems Optimization	7.5	E3A 
+02232	Applied Cryptography	5	E1B 
+02239	Data Security	7.5	E5B 
+02244	Logic for Security	7.5	F2A 
+02249	Computationally Hard Problems	7.5	E3A 
+02258	Parallel Computer Systems	5	E5A 
+02266	User Experience Engineering	5	January 
+02269	Process Mining	5	E5A 
+02282	Algorithms for Massive Data Sets	7.5	F1A 
+02291	System Integration	5	F5A 
+02407	Stochastic Processes - Probability 2	5	E3A 
+02409	Multivariate Statistics	5	E1A 
+02417	Time Series Analysis	5	E4B, F4B    
+02443	Stochastic Simulation	5	June    
+02450	Introduction to Machine Learning and Data Mining	5	F4A, E4A    
+02456	Deep learning	5	E2A 
+02506	Advanced Image Analysis	5	F5B 
+02582	Computational Data Analysis	5	F2B 
+02586	Statistical Genetics	5	E1A 
+02614	High-Performance Computing	5	January 
+02805	Social graphs and interactions	10	E5  
+02806	Social data analysis and visualization	5	F3A 
+02807	Computational Tools for Data Science	5	E7  
+25303	Mathematical biology	5	E1B 
+30530	Geographic Information Systems	5	F4A 
+42112	Mathematical Programming Modelling	5	January 
+42186	Model-based machine learning	5	F4B 
+42578	Advanced Business Analytics	5	F3B 
