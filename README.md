@@ -9,6 +9,7 @@ Based on The following links of required courses to be taken during the master's
 
 [The master's programme](https://www.dtu.dk/english/education/msc/programmes/human-centered-artificial-intelligence#study-programme__focus_areas__data-science)
 
+[The requirements for my master's](https://sdb.dtu.dk/myline)
 
 Especially [this](https://www.compute.dtu.dk/english/education/Data-Science-Big-Data) link shows the most important aspects of getting a certificate for being a data scientist. This link describes that
 * A master's in one of Computer Science and Engineering, Mathematical Modelling and Computation or Digital Media Engineering (Human-Centered Artificial Intelligence) is best for achieving the data scientist goals
