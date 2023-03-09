@@ -1,5 +1,6 @@
 import pandas as pd
 import matplotlib.pyplot as plt
+import numpy as np
 
 timetable_to_time = {
     "January": "January",
@@ -35,9 +36,35 @@ timetable_to_time = {
 def ects_requirements(current_courses, general_1, general_2, techno):
     """Undersøger om der er taget for få eller for mange kurser i teknologiske linjefag eller generelle kompetencer"""
 
+    # Do dataframe intersection
     general_1_commons = pd.merge(current_courses, general_1["title"], how="inner")
     general_2_commons = pd.merge(current_courses, general_2["title"], how="inner")
     techno_commons = pd.merge(current_courses, techno["title"], how="inner")
+    
+    # Get the courses that can be both technological specialization and general competence
+    similars = pd.merge(general_2_commons, techno_commons, how='inner', on=['title'])
+    similars = similars.reset_index()
+    choices = []
+    
+    # Get the user to choose where the dubious courses belong and remove them from the other dataframe
+    for i, course in similars.iterrows():
+        choice = -1
+        while choice == -1:
+            try:
+                choice = int(input(f'Is {course["title"]}\n    (1) general competence\n    (2) technological specialization?\n'))
+                if choice not in [1, 2]:
+                    print("Please input either 1 or 2.")
+                    choice = -1
+            except ValueError:
+                print("Please input integers only.")
+        
+        if choice == 1:
+            techno_commons = techno_commons[techno_commons.title != course["title"]]
+        if choice == 2:
+            general_2_commons = general_2_commons[general_2_commons.title != course["title"]]
+            
+
+    
     names = [
         "entrepreneurship",
         "general competence",
