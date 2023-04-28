@@ -8,14 +8,14 @@ from dataloader import get_data
 
 if __name__ == "__main__":
     current_courses, core, courselist, general_1, general_2, techno = get_data(
-        "current_courses_mar23.csv"
+        "current_courses_apr23.csv"
     )
 
     # How are the courses seperated into general, technological, elective, master
     ects_requirements(current_courses, general_1, general_2, techno)
 
     # Show core and courselist
-    # ects_above_required(current_courses, core, courselist)
+    ects_above_required(current_courses, core, courselist)
 
     # Show which other core and courselist courses could be taken
     # alternative_courses(current_courses, core, courselist)
@@ -29,5 +29,5 @@ if __name__ == "__main__":
     #     general_2,
     #     techno,
     #     course_number=None,
-    #     course_title="system integration",
+    #     course_title="UX Design Prototyping",
     # )

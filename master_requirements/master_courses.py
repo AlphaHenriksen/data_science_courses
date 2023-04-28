@@ -83,7 +83,7 @@ def ects_requirements(current_courses, general_1, general_2, techno):
     totals = [
         sum(general_1_commons["points"]),
         sum(general_2_commons["points"]),
-        sum(techno_commons["points"]) - 5,
+        sum(techno_commons["points"]),
         current_courses.points[current_courses.title == "Master's Thesis"].values[0],
     ]
     neededs = [15, 20, 30, 30]
