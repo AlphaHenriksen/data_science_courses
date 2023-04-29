@@ -6,6 +6,10 @@ def get_data(course_file):
     current_courses = pd.read_csv(
         course_file, sep="\t", dtype={0: str, 1: str, 2: str, 3: float}
     )
+    
+    bachelor_courses = pd.read_csv(
+        "bachelor_courses.csv", sep="\t", dtype={0: str, 1: str, 2: str, 3: float}
+    )
 
     # Load courses for certificate
     core = pd.read_csv(
@@ -35,4 +39,4 @@ def get_data(course_file):
         sep="\t",
         dtype={0: str, 1: str, 2: float, 3: str},
     )
-    return current_courses, core, courselist, general_1, general_2, techno
+    return current_courses, bachelor_courses, core, courselist, general_1, general_2, techno

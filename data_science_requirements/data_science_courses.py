@@ -31,13 +31,21 @@ timetable_to_time = {
 }
 
 
-def ects_above_required(courses, core, courselist):
+def ects_above_required(courses, bachelor_courses, core, courselist):
     """Regner mængden af ects-point jeg har over det nødvendige i disse to lister:
     https://www.compute.dtu.dk/english/education/Data-Science-Big-Data/Core
     https://www.compute.dtu.dk/english/education/Data-Science-Big-Data/Courselist"""
 
+    # Core and courselist courses from master
     core_commons = pd.merge(courses, core["title"], how="inner")
     courselist_commons = pd.merge(courses, courselist["title"], how="inner")
+
+    # Core and courselist courses from bachelor
+    bachelor_core_commons = pd.merge(bachelor_courses, core["title"], how="inner")
+    bachelor_courselist_commons = pd.merge(bachelor_courses, courselist["title"], how="inner")
+
+    core_commons = pd.concat([core_commons, bachelor_core_commons])
+    courselist_commons = pd.concat([courselist_commons, bachelor_courselist_commons])
 
     print("Total courses taken from core: ")
     print(core_commons, "\n")

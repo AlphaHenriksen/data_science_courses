@@ -12,7 +12,7 @@ course_number	title	timetable_group	points
 
 01017	Discrete Mathematics	E2B	5
 02601	Introduction to Numerical Algorithms	F1B	5
-02450	Introduction to Machine Learning and Data Mining	E4A	5
+02450	Introduction to Machine Learning and Data Mining	F4A, E4A	5.0
 02456	Deep learning	E2A	5
 01034	Advanced Engineering Mathematics 2	E1A	5
 02445	Project in Statistical Evaluation for Artificial Intelligence and Data	January	5
@@ -34,31 +34,3 @@ course_number	title	timetable_group	points
 
 02502	Image analysis	F3A	5
 00000	Bachelor project	AAA	20
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-02450	Introduction to Machine Learning and Data Mining	F4A, E4A	5.0
